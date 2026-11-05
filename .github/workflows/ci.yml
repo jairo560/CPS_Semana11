@@ -33,6 +33,7 @@ jobs:
 
   desplegar-staging:
     name: Despliegue simulado a staging
+    needs: pruebas
     runs-on: ubuntu-latest
     # Encuentra el defecto: ¿qué falta para que este job espere a las pruebas?
     steps:
